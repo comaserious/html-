@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectpage</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .select{
+            border: 2px solid black;
+            float: left;
+            width: 30%;
+            height: 500px;
+            margin-left: 1%;
+            margin-top:10%;
+            /* margin-bottom: 10%; */
+            display: flex;
+            font-family: "Oleo Script Swash Caps";
+            font-size: xx-large;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
+        .select:hover{
+            font-weight: bolder;
+            font-size: 50px;
+            cursor: pointer;
+            width: 30vh;
+            height: 80vh;
+            
+        }
+        #select2{
+            background-image: url('sample/chams.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            color: white;
+            
+        }
+        #select3{
+            background-image: url('sample/goal.jpeg');
+            background-repeat: no-repeat;
+            background-position: 50% 150%;
+            color:black;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Noto+Sans+Telugu:wght@100..900&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="whoamI.html">
+        <span class="select" id="select1">
+            <p id="who">who am I?</p>
+        </span>
+    </a>
+    
+    <a href="hobby.html">
+        <span class="select" id="select2">
+            <p>hobby</p>
+        </span>
+    </a>
+    
+    <a href="future.html">
+        <span class="select" id="select3">
+            <p>future</p>
+        </span>
+    </a>
+    
+</body>
+</html>
