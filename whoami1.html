@@ -70,7 +70,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            display: none;
+            /* display: none; */ 
+            /* 차지하는 공간도 없애기 때문에 애써 배치한 공간이 없어지면서 공간이 조금씩 안으로 들어간다 */
+            /* 이를 해결하기 위해서 visibility : hidden; 을 사용하면 공간은 그대로 두지만 컨텐츠를 보여주지 않는다 */
+            visibility: hidden;
             
         }
 
