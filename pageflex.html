@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagecopy</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction:column;
+            height: 100vh;
+            width: 100vw;
+            justify-content: space-evenly;
+        }
+        header{
+            width: 100%;
+            height : 7%;
+            background-color: cyan;
+            text-align: right;
+
+        }
+        section{
+            width: 100%;
+            height: 80%;
+            background-color: brown;
+            display : flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        footer{
+            width: 100%;
+            height : 7%;
+            background-color: blue;
+        }
+        aside{
+            width:9%;
+            height: 100%;
+            background-color: purple;
+            display: flex;
+            
+            align-items: center;
+        }
+        .main{
+            width: 80%;
+            height: 80%;
+            background-color: black;
+            display: flex;
+            
+
+        }
+        #photo{
+            height:100%;
+            width: 54%;
+            background-color: red;
+            flex-grow:2;
+        }
+        #word{
+            height: 100%;
+            width: 40%;
+            background-color: greenyellow;
+            border: dashed 1px;
+            flex-grow:1;
+            margin-left: 10px;
+        }
+        #aside1{
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Noto+Sans+Telugu:wght@100..900&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span>whoAmI?</span>
+            <span>hobby</span>
+            <span>future</span>
+        </header>
+        <section>
+            <aside id="aside1">
+                <span id="arrowleft">
+                    <img src="sample/arrowleft.png" height="40px" width="40px">
+                </span>
+            </aside>
+            <article class="main">
+                <article class="contents" id="photo"></article>
+                <article class="contents" id="word"></article>
+            </article>
+            <aside>
+                <span id="arrowright">
+                    <img src="sample/arrowright.png" height="40px" width="40px">
+                </span>
+            </aside>
+
+        </section>
+        <footer></footer>
+    </div>
+</body>
+</html>
