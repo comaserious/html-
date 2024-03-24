@@ -9,7 +9,7 @@
         .container{
             display: flex;
             flex-direction:column;
-            
+            height: 100vh;
             width: 100vw;
             justify-content: space-evenly;
         }
@@ -45,24 +45,60 @@
             text-align: right;
             font-size: large;
             animation: footer 2s ease    ;
-            display: flex;
-            justify-content: space-between;
         }
-       
+        aside{
+            width:9%;
+            height: 100%;
+            
+            display: flex;
+            align-items: center;
+        }
         .main{
             width: 90%;
             height: 80%;
             
             display: flex;
             position: relative;
-            top : 10%;
-            display: flex;
-            justify-content: center;
-            margin-top: 5%;
+            top : 8%;
+            
 
         }
-        
-        
+        #photo{
+            height:100%;
+            width: 54%;
+            
+            flex-grow:2;
+            position: relative;
+            animation: slide 1s ease-out;
+            background-image:url('sample/todaychel.png') ;
+            background-size: cover;
+            background-position: 0% 50%;
+            background-repeat: no-repeat;
+        }
+        #word{
+            height: 100%;
+            width: 40%;
+            
+            border: dashed 1px;
+            flex-grow:1;
+            margin-left: 10px;
+            border-radius: 0.5em 0.5em 0 0.5em;
+            position : relative;
+            animation: slide 2s ease;
+            display: flex;
+            align-items: center;
+        }
+        aside{
+            animation: arrow 5s ease;
+        }
+        #aside1{
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+        #aside2{
+            visibility: hidden;
+        }
         .head{
             margin-right: 2em;
         }
@@ -70,7 +106,7 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            width: 100%;
+            width: 75%;
             
             align-items: center;
             
@@ -91,7 +127,6 @@
             cursor: pointer;
             position: relative;
             animation: slideforplus 2s ease-out;
-            margin-top: 5%;
         }
         @keyframes slide {
             from{
@@ -147,16 +182,10 @@
         p{
             padding: 20px;
         }
-        footer>a{
-            text-decoration: none;
-            color: inherit;
-            
-        }
         header>a{
             text-decoration: none;
             color: inherit;
         }
-        
     </style>
     <!-- 부트스트랩 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -168,94 +197,48 @@
 <body>
     <div class="container">
         <header>
-            <a href="whoamifinal-1.html">
-                <span class="head" style="opacity: 30%;">whoAmI?</span>
-            </a>
-            <a href="hobbyfinal-1.html">
-                <span class="head" style="opacity: 30%;">hobby</span>
-            </a>
-            <span class="head"><u>shinchon</u></span>
-            <a href="futurefinal-1.html">
-                <span class="head" style="opacity: 30%;">future</span>
-            </a>
-            
-            
-            
-            
+            <a href="whoamifinal-1.html"><span class="head" style="opacity: 30%;">whoAmI?</span></a>
+            <span class="head"><u>hobby</u></span>
+            <a href="shinchonfinal-1.html"><span class="head" style="opacity: 30%;">shinchon</span></a>
+            <a href="futurefinal-1.html"><span class="head" style="opacity: 30%;">future</span></a>
         </header>
         <section>
-            
+            <aside id="aside1">
+                <a href="hobbyfinal-3.html"><span id="arrowleft">
+                    <img src="sample/previous.png" height="60px" width="40px">
+                </span></a>
+                
+            </aside>
         
             <div id="add">
                 <a id="plus" href="addingpage.html">
                 </a>
                 <article class="main">
-                    <div class="row" >
-                        <div class="col-lg-3 col-md-6 px-2">
-                            <div class="card" style="width: 100%;">
-                                <img src="sample/rr.jpg" class="card-img-top" style="height: 200px;">
-                                <div class="card-body">
-                                  <p class="card-text">꼬숑돈까스</p>
-                                  <a href="GGo.html" class="btn btn-outline-dark">Go to eat</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-2">
-                            <div class="card" style="width: 100%;">
-                                <img src="sample/kimchi.jpg" class="card-img-top" style="height: 200px;">
-                                <div class="card-body">
-                                  <p class="card-text">별당김치찜</p>
-                                  <a href="kimchi.html" class="btn btn-outline-dark">Go to eat</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-2">
-                            <div class="card" style="width: 100%;">
-                                <img src="sample/yamano.jpg" class="card-img-top" style="height: 200px;">
-                                <div class="card-body">
-                                  <p class="card-text">야마노 라멘</p>
-                                  <a href="yamano.html" class="btn btn-outline-dark">Go to eat</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-2">
-                            <div class="card" style="width: 100%;">
-                                <img src="sample/udong.jpg" class="card-img-top" style="height: 200px;">
-                                <div class="card-body">
-                                  <p class="card-text">역전우동</p>
-                                  <a href="udong.html" class="btn btn-outline-dark">Go to eat</a>
-                                </div>
-                              </div>
-                        </div>
+                    <article class="contents" id="photo">
                         
-                        <div class="col-lg-3 col-md-6 px-2">
-                            <div class="card" style="width: 100%;">
-                                <img src="sample/Juu.jpg" class="card-img-top" style="height: 200px;">
-                                <div class="card-body">
-                                  <p class="card-text">쭈꾸미블루스</p>
-                                  <a href="JJu.html" class="btn btn-outline-dark">Go to eat</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-2">
-                            <div class="card" style="width: 100%;">
-                                <img src="sample/bento.jpg" class="card-img-top" style="height: 200px;">
-                                <div class="card-body">
-                                  <p class="card-text">가츠벤또</p>
-                                  <a href="bento.html" class="btn btn-outline-dark">Go to eat</a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-
-
+                    </article>
+                    <article class="contents" id="word">
+                        <p>
+                            구단주가 바뀌면서 최근 두시즌간 정말 죽을 쓰고 있다
+                            아마도 공부에 전념하라는 뜻인거 같다
+                            이번시즌도 정말 보기 힘들 정도의 수준의 축구력을 보여주고 있다
+                            언제 좋아질런지....
+                        </p>
+                    </article>
                 </article>
             </div>
+            
+            <aside id="aside2">
+                <span id="arrowright">
+                    <a href="hobbyfinal-4.html">
+                        <img src="sample/next.png" height="60px" width="40px">
+                    </a>
+                    
+                </span>
+            </aside>
 
         </section>
-        <hr>
         <footer>
-            <a href="#plus"><img src="sample/up.png" height="20px" width="20px">top</a>
             <a href="start-final.html" id="page">first page</a>
         </footer>
     </div>
