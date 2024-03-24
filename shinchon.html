@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagecopy</title>
+    <style>
+       
+        .container{
+            display: flex;
+            flex-direction:column;
+            height: 100vh;
+            width: 100vw;
+            justify-content: space-evenly;
+        }
+        header{
+            width: 100%;
+            height : 7%;
+            background-color: cyan;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            animation: headtop 1s;
+            font-family:  "Oleo Script Swash Caps";
+            font-weight: bold;
+
+            
+        }
+        section{
+            width: 100%;
+            height: 80%;
+            background-color: brown;
+            display : flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        footer{
+            width: 100%;
+            height : 7%;
+            position: relative;
+            font-family:  "Oleo Script Swash Caps";
+            font-weight: bold;
+            text-align: right;
+            font-size: large;
+            animation: footer 2s ease    ;
+            display: flex;
+            right :5em;
+            justify-content: right;
+        }
+        
+        .main{
+            width: 90%;
+            height: 80%;
+            background-color: black;
+            display: flex;
+            position: relative;
+            top : 8%;
+            justify-content: center;
+        }
+        
+        .head{
+            margin-right: 3em;
+        }
+        #add{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            background-color: azure;
+            align-items: center;
+            
+        }
+        #plus{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            position: relative;
+            left : 40%;
+            top : 5%;
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('sample/plust.png');
+            background-size: contain;
+            cursor: pointer;
+            position: relative;
+            animation: slideforplus 2s ease-out;
+        }
+        @keyframes slide {
+            from{
+                position: relative;
+                left : -100px;
+                opacity: 0%;
+            }
+            to{
+                left : 0px;
+            }
+        }
+        @keyframes headtop {
+            from{
+                top: -100px;
+                opacity: 0;
+            }
+            to{
+                top:0px;
+            }
+        }
+        @keyframes slideforplus {
+            from{
+                left: 30%;
+                opacity: 0%;
+            }
+            to{
+                left : 40%;
+            }
+            
+        }
+        @keyframes arrow {
+            from{
+                opacity: 0%;
+            }
+            to{
+                opacity: 100%;
+            }
+        }
+        @keyframes footer {
+            from{
+                bottom : -100vh;
+                opacity: 0%;
+
+            }
+            to{
+                bottom : 0%;
+            }
+        }
+        #page{
+            text-decoration: none;
+            color: inherit;
+        }
+        area{
+            cursor: pointer;
+        }
+    </style>
+    <!-- 부트스트랩 -->
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Noto+Sans+Telugu:wght@100..900&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="head">whoAmI?</span>
+            <span class="head">hobby</span>
+            <span class="head">shinchon</span>
+            <span class="head">future</span>
+        </header>
+        <section>
+            <div id="add">
+                <a id="plus" href="addingpage.html">
+                </a>
+                <article class="main">
+                    <img src="sample/Group 1.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="home" title="home" href="" coords="4418,4608,99" shape="circle">
+    <area target="" alt="JJuGGu" title="JJuGGu" href="" coords="4692,4425,102" shape="circle">
+    <area target="" alt="Mandu" title="Mandu" href="" coords="4607,4138,113" shape="circle">
+    <area target="" alt="udong" title="udong" href="" coords="4015,3229,96" shape="circle">
+    <area target="" alt="china" title="china" href="" coords="4729,1623,110" shape="circle">
+    <area target="" alt="three" title="three" href="" coords="4259,1465,124" shape="circle">
+</map>
+
+
+                </article>
+            </div>
+        </section>
+        <footer>
+            <a href="start-final.html" id="page">first page</a>
+        </footer>
+    </div>
+
+    <!-- 부트스트랩 -->
+    
+</body>
+</html>

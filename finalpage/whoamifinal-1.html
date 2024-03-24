@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagecopy</title>
+    <style>
+       
+        .container{
+            display: flex;
+            flex-direction:column;
+            height: 100vh;
+            width: 100vw;
+            justify-content: space-evenly;
+        }
+        header{
+            width: 100%;
+            height : 7%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            animation: headtop 1s;
+            font-family:  "Oleo Script Swash Caps";
+            font-weight: bold;
+
+            
+        }
+        section{
+            width: 100%;
+            height: 80%;
+            
+            display : flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        footer{
+            width: 100%;
+            height : 7%;
+            position: relative;
+            font-family:  "Oleo Script Swash Caps";
+            font-weight: bold;
+            text-align: right;
+            font-size: large;
+            animation: footer 2s ease    ;
+        }
+        aside{
+            width:9%;
+            height: 100%;
+            
+            display: flex;
+            align-items: center;
+        }
+        .main{
+            width: 90%;
+            height: 80%;
+            
+            display: flex;
+            position: relative;
+            top : 8%;
+            
+
+        }
+        #photo{
+            height:100%;
+            width: 54%;
+            
+            flex-grow:2;
+            position: relative;
+            animation: slide 1s ease-out;
+            background-image: url('sample/noAttention.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 70% 50%;
+        }
+        #word{
+            height: 100%;
+            width: 40%;
+        
+            border: dashed 1px;
+            flex-grow:1;
+            margin-left: 10px;
+            border-radius: 0.5em 0.5em 0 0.5em;
+            position : relative;
+            animation: slide 2s ease;
+            display: flex;
+            align-items: center;
+        }
+        aside{
+            animation: arrow 5s ease;
+        }
+        #aside1{
+            display: flex;
+            justify-content: flex-end;
+            visibility: hidden;
+        }
+        .head{
+            margin-right: 2em;
+        }
+        #add{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 75%;
+            
+            align-items: center;
+            
+        }
+        #plus{
+            height: 50px;
+            width: 50px;
+            
+            position: relative;
+            left : 40%;
+            top : 5%;
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('sample/plust.png');
+            background-size: contain;
+            cursor: pointer;
+            position: relative;
+            animation: slideforplus 2s ease-out;
+        }
+        @keyframes slide {
+            from{
+                position: relative;
+                left : -100px;
+                opacity: 0%;
+            }
+            to{
+                left : 0px;
+            }
+        }
+        @keyframes headtop {
+            from{
+                top: -100px;
+                opacity: 0;
+            }
+            to{
+                top:0px;
+            }
+        }
+        @keyframes slideforplus {
+            from{
+                left: 30%;
+                opacity: 0%;
+            }
+            to{
+                left : 40%;
+            }
+            
+        }
+        @keyframes arrow {
+            from{
+                opacity: 0%;
+            }
+            to{
+                opacity: 100%;
+            }
+        }
+        @keyframes footer {
+            from{
+                bottom : -100vh;
+                opacity: 0%;
+
+            }
+            to{
+                bottom : 0%;
+            }
+        }
+        #page{
+            text-decoration: none;
+            color: inherit;
+        }
+        header>a{
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Noto+Sans+Telugu:wght@100..900&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="head"><u>whoAmI?</u></span>
+            <a href="hobbyfinal-1.html"><span class="head" style="opacity: 30%;">hobby</span></a>
+            <a href="shinchonfinal-1.html"><span class="head" style="opacity: 30%;">shinchon</span></a>
+            <a href="futurefinal-1.html"><span class="head" style="opacity: 30%;">future</span></a>
+            
+            
+            
+            
+        </header>
+        <section>
+            <aside id="aside1">
+                <span id="arrowleft">
+                    <img src="sample/previous.png" height="60px" width="40px">
+                </span>
+            </aside>
+        
+            <div id="add">
+                <a id="plus" href="addingpage.html">
+                </a>
+                <article class="main">
+                    <article class="contents" id="photo">
+                        
+                    </article>
+                    <article class="contents" id="word">
+                        <p style="padding: 20px;">아무도 관심 없겠지만 <br>저에 대해서 몇글자 적겠습니다.<br>회계공부를 하다가 도저히 성공할 기미가 안보여서<br>
+                            그래도 전공을 살릴만한 분야가 코딩이라고 생각했습니다.</p>
+                    </article>
+                </article>
+            </div>
+            
+            <aside id="aisde2">
+                <span id="arrowright">
+                    <a href="whoamifinal-2.html">
+                        <img src="sample/next.png" height="60px" width="40px">
+                    </a>
+                </span>
+            </aside>
+
+        </section>
+        <footer>
+            <a href="start-final.html" id="page">first page</a>
+        </footer>
+    </div>
+
+    <!-- 부트스트랩 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

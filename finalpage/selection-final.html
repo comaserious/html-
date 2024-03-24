@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:auto;
+        }
+        .outer{
+            height :100vh;
+            width: 100vw;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+
+            
+        }
+        .selection{
+            border : 2px solid black;
+            width: 24%;
+            height: 500px;
+            font-family: "Oleo Script Swash Caps";
+            font-size: xx-large;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        .selection:hover{
+            height: 70vh;
+            
+            cursor: pointer;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 50px;
+            
+        }
+        #selection1{
+            background-color: white;
+            position: relative;
+            animation: selectSlide1 2s ease;
+            
+        }
+        #selection2{
+            background-image: url('sample/chams.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            color: white;
+            position: relative;
+            animation: selectSlide2 2s ease    ;
+        }
+        #selection3{
+            background-image: url('sample/shinchon.jpg');
+            background-repeat: no-repeat;
+            position: relative;
+            color : white;
+            animation: selectSlide1 2s ease;
+            background-size: cover;
+
+        }
+        #selection4{
+            background-image: url('sample/goal.jpeg');
+            background-repeat: no-repeat;
+            background-position: 50% 150%;
+            color:black;
+            position: relative;
+            animation: selectSlide2 2s ease ;
+            
+        }
+        @keyframes selectSlide1 {
+            from{
+                top:50%;
+                opacity: 0;
+            }
+            to{
+                top:0%;
+            }
+        }
+        @keyframes selectSlide2{
+            from{
+                bottom:50%;
+                opacity: 0%;
+
+            }
+            to{
+                bottom: 0%;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Noto+Sans+Telugu:wght@100..900&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+Telugu:wght@100..900&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="outer">
+        <div class="selection" id="selection1">
+            <a href="whoamifinal-1.html">
+                <span>
+                    who am I ?
+                </span>
+            </a>
+            
+        </div>
+        <div class="selection" id="selection2">
+            <a href="hobbyfinal-1.html">
+                <span>
+                    hobby
+                </span>
+            </a>
+            
+        </div>
+        <div class="selection" id="selection3">
+            <a href="shinchonfinal-1.html">
+                <span>
+                    shin chon
+                </span>
+            </a>
+            
+        </div>
+        <div class="selection" id="selection4">
+            <a href="futurefinal-1.html">
+                <span>
+                    future
+                </span>
+            </a>
+            
+        </div>
+    </div>    
+</body>
+</html>
